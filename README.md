@@ -1,3 +1,3 @@
-# mental-health-burnout-detection
+# Mental Health Burnout Detection System
 Burnout—a state of emotional, mental, and often physical exhaustion—has become an all-too-common consequence of modern work and study environments. According to the World Health Organization, “burn-out” is an occupational phenomenon resulting from chronic workplace stress that has not been successfully managed. Early detection and intervention can dramatically reduce the risk of severe mental health crises, yet most existing tools rely on self-reported questionnaires administered infrequently (e.g. once a quarter).
 This project aims to fill that gap by predicting and visualize employee burnout risk using daily health and work metrics. This project includes a synthetic dataset, notebook code for feature engineering and machine learning, and visualizations that support early detection and personalized wellness insights. Built as part of the Mental Health Burnout Detection System.
