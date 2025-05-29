@@ -25,12 +25,6 @@ The **Mental Health Burnout Detection System** is a full-stack, AI-powered platf
 ### **System Architecture**
 
 The system uses a modern **microservices architecture**:
-
-┌─────────────┐   ┌─────────────┐   ┌─────────────┐  
-│  FRONTEND   │   │   BACKEND   │   │ AI SERVICE  │  
-│  HTML/CSS/JS│◄─►│ Node.js API │◄─►│ Python API  │  
-└─────────────┘   └─────────────┘   └─────────────┘
-
 * **Frontend:** Single-page web app for data entry and results display (frontend/index.html,styles.css,scripts.js)  
 * **Backend:** Node.js \+ Express API for risk calculation and orchestration (backend/server.js)  
 * **AI Service:** Python FastAPI microservice for generating AI-powered tips (ai-service/app.py)
