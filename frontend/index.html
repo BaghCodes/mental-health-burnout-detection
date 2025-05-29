@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mental Health Burnout Detection System</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧠 Mental Health Burnout Detection</h1>
+            <p>AI-Powered Wellness Assessment & Personalized Tips</p>
+        </div>
+
+        <div class="main-content">
+            <div class="form-section">
+                <h2>📊 Daily Health Assessment</h2>
+                <form id="burnoutForm" action="javascript:void(0);">
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <label for="sleep">💤 Sleep Hours</label>
+                            <input type="number" id="sleep" step="0.1" min="0" max="24" required placeholder="e.g., 7.5" />
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="work">💼 Work Hours</label>
+                            <input type="number" id="work" step="0.1" min="0" max="24" required placeholder="e.g., 8.0" />
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="screen">📱 Screen Time (hours)</label>
+                            <input type="number" id="screen" step="0.1" min="0" max="24" required placeholder="e.g., 6.0" />
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="heartRate">❤️ Average Heart Rate</label>
+                            <input type="number" id="heartRate" min="40" max="200" placeholder="e.g., 72 (optional)" />
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="steps">👟 Steps Taken</label>
+                            <input type="number" id="steps" min="0" placeholder="e.g., 8000 (optional)" />
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        🔍 Analyze My Burnout Risk
+                    </button>
+                </form>
+            </div>
+
+            <div id="loadingSection" class="loading" style="display: none;">
+                <p>🤖 Analyzing your data and generating personalized tips...</p>
+            </div>
+
+            <div id="errorSection" class="error" style="display: none;"></div>
+
+            <div id="resultsSection" class="results-section">
+                <div class="risk-card">
+                    <h2>🎯 Your Burnout Risk Assessment</h2>
+                    <div id="riskScore" class="risk-score">--</div>
+                    <div id="riskCategory" style="font-size: 1.2rem; font-weight: 600;">--</div>
+                    <p id="riskDescription" style="margin-top: 1rem; color: #7f8c8d;">--</p>
+                </div>
+
+                <div class="tips-section">
+                    <h3>🤖 AI-Powered Wellness Recommendations</h3>
+                    <ul id="tipsList" class="tips-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
